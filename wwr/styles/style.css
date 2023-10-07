@@ -39,16 +39,16 @@ nav a:hover {
     text-decoration: none;
 }
 .book:hover {
-    color: aqua;
+    color: chartreuse;
 }
 .join:hover {
-    color: aqua;
+    color: chartreuse;
 }
 .msg {
-    background-color: chartreuse;
+    background-color: #d9c2a3;
 }
 footer {
-    background-color: chocolate;
+    background-color: #d9c2a3;
 }
 .logo {
     width: 80px;
