@@ -67,4 +67,8 @@ footer p {
 }
 footer p a:hover {
     text-decoration: underline;
+    color: chartreuse;
+}
+footer p a {
+    color: darkgreen;
 }
