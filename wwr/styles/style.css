@@ -32,10 +32,10 @@ body {
     padding: 0;
 }
 header {
-    background-color: bisque;
+    background-color: rgba(20,30,13, .7);
 }
 nav a:hover {
-    background-color: black;
+    background-color: aqua;
     color: #d9c2a3;
 }
 .book,.join {
