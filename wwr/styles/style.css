@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 #content {
     max-width: 1600px;
@@ -25,6 +26,9 @@ main section {
 body {
     background-color: #fcfbfb;
     font-size: 22px;
+    font-family: 'Raleway', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: rgba(20,30,13, .7);
@@ -37,11 +41,14 @@ nav a:hover {
     color: darkgreen;
     text-decoration: none;
     font-size: 18px;
+    margin-top: 50px;
+    
 }
 .join {
     color: darkgreen;
     text-decoration: none;
     font-size: 18px;
+    margin-top: 50px;
 }
 .book:hover {
     color: chartreuse;
@@ -54,6 +61,7 @@ nav a:hover {
 }
 footer {
     background-color: #d9c2a3;
+    margin-top: 200px;
 }
 .logo {
     width: 80px;
@@ -80,9 +88,16 @@ footer p a {
 .home-title {
     font-size: 2em;
     font-family: 'Rock Salt','Rowdies', sans-serif;
+    margin-top: 10px;
 }
 .msg p {
     font-size: 8em;
     background-color: #6f7364;
     line-height: 1.5em;
+}
+h2 {
+    margin: 0;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
