@@ -38,21 +38,14 @@ nav a:hover {
     background-color: black;
     color: #d9c2a3;
 }
-.book {
+.book,.join {
     color: darkgreen;
     text-decoration: none;
     font-size: 18px;
     margin-top: 50px;
     padding: 15px 30px;
     border-radius: 5px;
-}
-.join {
-    color: darkgreen;
-    text-decoration: none;
-    font-size: 18px;
-    margin-top: 50px;
-    padding: 15px 30px;
-    border-radius: 5px;
+    background-color: #d9c2a3;
 }
 .book:hover {
     color: chartreuse;
