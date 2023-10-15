@@ -9,6 +9,7 @@ nav a {
     text-align: center;
     color: #fcfbfb;
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1,h4 {
     text-align: center;
@@ -42,13 +43,14 @@ nav a:hover {
     text-decoration: none;
     font-size: 18px;
     margin-top: 50px;
-    
+    padding: 15px 30px;
 }
 .join {
     color: darkgreen;
     text-decoration: none;
     font-size: 18px;
     margin-top: 50px;
+    padding: 15px 30px;
 }
 .book:hover {
     color: chartreuse;
@@ -58,16 +60,19 @@ nav a:hover {
 }
 .msg {
     background-color: #d9c2a3;
+    padding: 35px;
 }
 footer {
     background-color: #d9c2a3;
     margin-top: 200px;
+    padding: 25px 50px;
 }
 .logo {
     width: 80px;
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
@@ -94,10 +99,17 @@ footer p a {
     font-size: 8em;
     background-color: #6f7364;
     line-height: 1.5em;
+    padding-bottom: 15px;
 }
 h2 {
     margin: 0;
 }
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
+}
+#logo_link {
+    padding-top: 5px;
+}
+footer .social msg {
+    padding-top: 15px;
 }
