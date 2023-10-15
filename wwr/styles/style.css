@@ -63,6 +63,7 @@ nav a:hover {
 .msg {
     background-color: #d9c2a3;
     padding: 35px;
+    line-height: 1.5em;
 }
 footer {
     background-color: #d9c2a3;
@@ -100,7 +101,6 @@ footer p a {
 .msg p {
     font-size: 8em;
     background-color: #6f7364;
-    line-height: 1.5em;
     padding-bottom: 15px;
 }
 h2 {
