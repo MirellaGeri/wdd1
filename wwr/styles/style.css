@@ -27,7 +27,7 @@ main section {
 body {
     background-color: #fcfbfb;
     font-size: 22px;
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: Raleway, Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -92,7 +92,7 @@ footer p a {
     margin-top: 10px;
 }
 .msg p {
-    
+    font-size: 8em;
     background-color: #6f7364;
     padding-bottom: 15px;
 }
