@@ -7,6 +7,10 @@ nav {
   color: white;
   padding: 25px;
 }
+header{
+  display:grid;
+  grid-template-columns: 150px auto;
+}
 a {
     color: white;
     margin: 40px;
