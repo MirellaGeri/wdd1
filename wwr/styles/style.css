@@ -122,3 +122,10 @@ footer .social msg {
 main section img {
     box-sizing: border_box;
 }
+#hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+#hero-box{
+    grid-column: 1/4;
+}
