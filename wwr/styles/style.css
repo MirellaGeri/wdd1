@@ -119,6 +119,7 @@ footer .social msg {
 }
 .card-img {
     border: solid #d9c2a3;
+    width: 100%;
 }
 main section img {
     box-sizing: border_box;
@@ -137,4 +138,11 @@ main section img {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
+}
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.mountains{
+    width: 100%;
 }
