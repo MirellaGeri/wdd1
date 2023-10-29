@@ -48,13 +48,13 @@ nav a:hover {
     color: #d9c2a3;
 }
 .book,.join {
-    color: #d9c2a3;
+    color: rgba(20,30,13, .7);
     text-decoration: none;
     font-size: 18px;
     margin-top: 50px;
     padding: 15px 30px;
     border-radius: 5px;
-    background-color: rgba(20,30,13, .7);
+    background-color: #d9c2a3;
 }
 .book:hover {
     color: chartreuse;
@@ -63,7 +63,7 @@ nav a:hover {
     color: chartreuse;
 }
 .msg {
-    background-color: #d9c2a3;
+    background-color: #6f7364;
     padding: 35px;
     line-height: 1.5em;
     grid-column: 6/10;
@@ -108,7 +108,7 @@ footer p a {
 }
 .msg p {
     font-size: 1em;
-    background-color: #6f7364;
+    background-color: #d9c2a3;
     padding-bottom: 15px;
 }
 h2 {
