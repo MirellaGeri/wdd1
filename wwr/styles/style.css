@@ -73,6 +73,10 @@ footer {
     background-color: #d9c2a3;
     margin-top: 200px;
     padding: 25px 50px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .logo {
     width: 80px;
@@ -130,7 +134,7 @@ h2 {
     justify-self: center;
     align-self: center;
 }
-footer .social msg {
+.social msg{
     padding-top: 15px;
 }
 .card-img {
