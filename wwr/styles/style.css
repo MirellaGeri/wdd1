@@ -44,7 +44,7 @@ header {
     grid-template-columns: 150px auto;
 }
 nav a:hover {
-    background-color: aqua;
+    background-color: chartreuse;
     color: #d9c2a3;
 }
 .book,.join {
