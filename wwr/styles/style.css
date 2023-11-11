@@ -251,7 +251,7 @@ main section img {
     margin: 5px;
 }
 .dots label:hover {
-    background: #ffff;
+    background: blue;
 }
 #mainfork:checked ~ .main-fork{
     margin-left: 0;
