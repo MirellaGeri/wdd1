@@ -217,13 +217,15 @@ main section img {
     footer {
         margin-top: 25px;
     }
-    .slider{
-        position: relative;
-        width: 60%;
-        overflow: hidden;
-    }
-    .images{
-        display: flex;
-        width: 100%;
-    }
+}
+.slider{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+}
+.images{
+    display: flex;
+    width: 100%;
 }
