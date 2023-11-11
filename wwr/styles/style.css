@@ -254,3 +254,12 @@ main section img {
 .dots label:hover {
     background: #ffff;
 }
+#mainfork:checked ~ .main-fork{
+    margin-left: 0;
+}
+#desolationgray:checked ~ .desolation{
+    margin-left: -100%;
+}
+#grandcanyon:checked ~ .gran-canyon{
+    margin-left: -200%;
+}
