@@ -218,8 +218,6 @@ main section img {
     }
 }
 .slider{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     position: relative;
     width: 60%;
     overflow: hidden;
