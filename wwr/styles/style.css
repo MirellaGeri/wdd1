@@ -235,3 +235,16 @@ main section img {
     position: relative;
     z-index: 1;
 }
+#overflow{
+    width: 100%;
+    overflow: hidden;
+}
+#slide1:checked ~ #slides .inner{
+    margin-left: 0;
+}
+#slide2:checked ~ #slides .inner{
+    margin-left: -100;
+}
+#slide3:checked ~ #slides .inner{
+    margin-left: -200;
+}
