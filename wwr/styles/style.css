@@ -236,7 +236,7 @@ main section img {
     width: 100%;
     transition: all 0.15s ease;
 }
-.images input{
+.images input[type=radio]{
     display: none;
 }
 .dots{
