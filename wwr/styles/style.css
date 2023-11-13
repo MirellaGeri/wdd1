@@ -235,15 +235,15 @@ main section img {
     animation: slider 30s ease-in-out infinite alternate;
 }
 .container #slider-img-1{
-    background-image: url(images/MainForktheSalmonRiver.png);
+    background-image: url(MainForktheSalmonRiver.png);
     background-position: center;
 }
 .container #slider-img-2{
-    background-image: url(images/DesolationandGrayCanyon.jpg);
+    background-image: url(DesolationandGrayCanyon.jpg);
     background-position: center;
 }
 .container #slider-img-3{
-    background-image: url(https://as1.ftcdn.net/v2/jpg/06/29/95/54/1000_F_629955420_aN8nyKy949P3G4lxKSzJyhdOjp7Qf8sJ.jpg);
+    background-image: url(GrandCanyon.png);
     background-position: center;
 }
 .container .button-holder .button{
