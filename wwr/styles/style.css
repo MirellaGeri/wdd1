@@ -232,4 +232,33 @@ main section img {
     grid-template-columns: repeat(3,100%);
     height: 100%;
     width: 100%;
+    animation: slider 30s ease-in-out infinite alternate;
+}
+.container #slider-img-1{
+    background-image: url(images/MainForktheSalmonRiver.png);
+    background-position: center;
+}
+.container #slider-img-2{
+    background-image: url(images/DesolationandGrayCanyon.jpg);
+    background-position: center;
+}
+.container #slider-img-3{
+    background-image: url(images/GrandCanyon.png);
+    background-position: center;
+}
+.container .button-holder .button{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 3rem;
+}
+.container .button-holder{
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+@keyframes slider{
+    0%{transform: translateX(0%);}
 }
