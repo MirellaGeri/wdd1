@@ -237,14 +237,20 @@ main section img {
 .container #slider-img-1{
     background-image: url(MainForktheSalmonRiver.png);
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .container #slider-img-2{
     background-image: url(DesolationandGrayCanyon.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .container #slider-img-3{
     background-image: url(GrandCanyon.png);
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .container .button-holder .button{
     background-color: white;
