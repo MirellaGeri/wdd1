@@ -229,7 +229,8 @@ main section img {
 }
 .container .wrapper-holder{
     display: grid;
-    grid-template-columns: repeat(3,100%);
+    grid-template-columns: 150px auto;
+    
     height: 100%;
     width: 100%;
     animation: slider 30s ease-in-out infinite alternate;
