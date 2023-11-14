@@ -219,7 +219,6 @@ main section img {
 }
 .container{
     text-align: center;
-    
 }
 .container .wrapper{
     width: 60vw;
@@ -265,7 +264,7 @@ main section img {
     margin: 3rem;
 }
 .container .button-holder{
-    position: static;
+    position: absolute;
     left: 45%;
     bottom: 0%;
 }
