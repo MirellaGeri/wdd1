@@ -264,7 +264,7 @@ main section img {
     margin: 3rem;
 }
 .container .button-holder{
-    position: absolute;
+    position: static;
     left: 45%;
     bottom: 0%;
 }
