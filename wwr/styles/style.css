@@ -269,5 +269,5 @@ main section img {
     bottom: 0%;
 }
 .button:hover{
-    box-shadow: 0px 7px 4px rgba(0,255,255, 0.6);
+    box-shadow: 0px 0px 7px 4px rgba(0,255,255, 0.6);
 }
