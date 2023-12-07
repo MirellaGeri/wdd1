@@ -12,44 +12,92 @@
             <img class="logo" src="images/logoGM.png" alt="GMlogo">
         </div>
         <header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="crochet.html">Crochet</a>
-                <a href="contactus.html">Contact Us</a>
-            </nav>
+            <div id="myNavContainer">
+                <nav>
+                    <a href="index.html" class="btn active" onclick="filterSelection('all')" >Home</a>
+                    <a href="crochet.html" class="btn" onclick="filterSelection('crochet')" >Crochet</a>
+                    <a href="#" class="btn" onclick="filterSelection('craft')" >Craft</a>
+                    <a href="#" class="btn" onclick="filterSelection('draw')" >Draw</a>
+                    <a href="about.html" >About Me</a>
+                    <a href="contactus.html" >Contact Us</a>
+                </nav>
+            </div>
         </header>
-        <main class="home-grid">
+        <div class="home-grid">
+            <div class="column crochet">
             <div class="imagen">
-                <img class="card-img" src="images/pink cat.jpeg" alt="cat crochet">
+                <img src="images/pink cat crochet.jpeg" alt="Crochet" style="width:100%">
                 <div class="overlay">
-                    <h3>Pink Cat Crochet</h3>
+                    <h3>Pink Cat</h3>
                 </div>
             </div>
-            <div class="imagen">
-                <img class="card-img" src="images/pink dragon.jpeg" alt="dragon paper">
-                <div class="overlay">
-                    <h3>Paper Dragon</h3>
+            </div>
+            <div class="column crochet">
+                <div class="imagen">
+                    <img src="images/tortle crochet.jpg" alt="Crochet" style="width:100%">
+                    <div class="overlay">
+                        <h3>Tortle</h3>
+                    </div>
                 </div>
             </div>
+            <div class="column craft">
             <div class="imagen">
-                <img class="card-img" src="images/llama.jpeg" alt="llama crochet">
+                <img src="images/pink dragon craft.jpeg" alt="Craft" style="width:100%">
                 <div class="overlay">
-                    <h3>Llama Crochet</h3>
+                    <h3>Dragon</h3>
                 </div>
             </div>
+            </div>
+            <div class="column crochet">
             <div class="imagen">
-                <img class="card-img" src="images/tortle cr.jpg" alt="tortle crochet">
+                <img src="images/llama crochet.jpeg" alt="Crochet" style="width:100%">
                 <div class="overlay">
-                    <h3>Tortle Crochet</h3>
+                    <h3>Llama</h3>
                 </div>
             </div>
+            </div>
+        
+            <div class="column crochet">
             <div class="imagen">
-                <img class="card-img" src="images/keychains cr.png" alt="keychains crochet">
+                <img src="images/mermaid crochet.jpg" alt="Crochet" style="width:100%">
                 <div class="overlay">
-                    <h3>Keychains Crochet</h3>
+                    <h3>Mermaid</h3>
                 </div>
             </div>
-        </main>
+            </div>
+            <div class="column crochet">
+                <div class="imagen">
+                    <img src="images/monkey crochet.jpg" alt="Crochet" style="width:100%">
+                    <div class="overlay">
+                        <h3>Monkey</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="column craft">
+            <div class="imagen">
+                <img src="images/box craft.jpg" alt="Craft" style="width:100%">
+                <div class="overlay">
+                    <h3>Box</h3>
+                </div>
+            </div>
+            </div>
+            <div class="column crochet">
+            <div class="imagen">
+                <img src="images/keychains crochet.png" alt="Crochet" style="width:100%">
+                <div class="overlay">
+                    <h3>Keychains</h3>
+                </div>
+            </div>
+            </div>
+            <div class="column craft">
+            <div class="imagen">
+                <img src="images/paper craft.jpg" alt="Craft" style="width:100%">
+                <div class="overlay">
+                    <h3>Paper Pen Holder</h3>
+                </div>
+            </div>
+            </div>
+        </div>
         <footer>
             <p>Portfolio 2023 - Geraldine Martinez</p>
             <p><a href="site-plan.html">Site Plan</a></p>
@@ -66,5 +114,47 @@
                 </a>
             </div>
         </footer>
+    </div>
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
 </body>
 </html>

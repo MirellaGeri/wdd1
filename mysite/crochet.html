@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geraldine Martinez | Portfolio | Crochet</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+        <div id="logo_link">
+            <img class="logo" src="images/logoGM.png" alt="GMlogo">
+        </div>
+        <header>
+            <div id="myNavContainer">
+                <nav>
+                    <a href="index.html" class="btn active" onclick="filterSelection('all')" >Home</a>
+                    <a href="crochet.html" class="btn" onclick="filterSelection('crochet')" >Crochet</a>
+                    <a href="#" class="btn" onclick="filterSelection('craft')" >Craft</a>
+                    <a href="#" class="btn" onclick="filterSelection('draw')" >Draw</a>
+                    <a href="about.html" >About Me</a>
+                    <a href="contactus.html" >Contact Us</a>
+                </nav>
+            </div>
+        </header>
+        <div class="home-grid">
+            <div class="column crochet">
+            <div class="imagen">
+                <img src="images/pink cat crochet.jpeg" alt="Crochet" style="width:100%">
+                <h4>Cat Crochet</h4>
+                <p>All you need to know to crochet this little amigurumi cat is how to single crochet, make a magic ring, and invisible decreases with single crochet.</p>
+            </div>
+            </div>
+            <div class="column craft">
+            <div class="imagen">
+                <img src="images/pink dragon craft.jpeg" alt="Craft" style="width:100%">
+                <h4>Mountains</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+            </div>      
+            <div class="column crochet">
+            <div class="imagen">
+                <img src="images/mermaid crochet.jpg" alt="Crochet" style="width:100%">
+                <h4>Mermaid Ariel Crochet</h4>
+                <p>The mermaid Ariel is approximately 11.81 inches (30 cm) tall.</p>
+            </div>
+            </div>
+            <div class="column craft">
+            <div class="imagen">
+                <img src="images/box craft.jpg" alt="Craft" style="width:100%">
+                <h4>Mountains</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+            </div>
+            <div class="column crochet">
+                <div class="imagen">
+                    <img src="images/llama crochet.jpeg" alt="Crochet" style="width:100%">
+                    <h4>LLama Crochet</h4>
+                    <p>This llama crochet are just super cute and truly a maker’s dream to gift.</p>
+                </div>
+            </div>
+            <div class="column crochet">
+                <div class="imagen">
+                    <img src="images/monkey crochet.jpg" alt="Crochet" style="width:100%">
+                    <h4>Monkey Crochet</h4>
+                    <p>The crochet monkey belongs to an especially cuddly kind and is very popular with the young and old, as a plush toy, keychain, or just lazily lay around.</p>
+                </div>
+            </div>
+            <div class="column crochet">
+            <div class="imagen">
+                <img src="images/keychains crochet.png" alt="Crochet" style="width:100%">
+                <h4>Keychains Crochet</h4>
+                <p>Crochet keychains are a fun way to add personal style to your keyring and help you keep track of your keys at the same time!</p>
+            </div>
+            </div>
+            <div class="column crochet">
+                <div class="imagen">
+                    <img src="images/tortle crochet.jpg" alt="Crochet" style="width:100%">
+                    <h4>Turtle Crochet</h4>
+                    <p>I made the small turtle, which has a big keychain size, and also crocheted the turtle from bigger yarn will make your mini amigurumi bigger and very huggable like this photo.</p>
+                </div>
+            </div>
+            
+            <div class="column craft">
+                <div class="imagen">
+                    <img src="images/paper craft.jpg" alt="Craft" style="width:100%">
+                    <h4>Mountains</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Portfolio 2023 - Geraldine Martinez</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        filterSelection("crochet")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myNavContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+    </script>
+</body>
+</html>
