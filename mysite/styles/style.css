@@ -5,19 +5,20 @@
     margin: 0 auto;
 }
 nav{
+    font-family: Agbalumo;;
     display: flex;
     justify-content: space-around;
 }
 nav a {
     text-align: center;
-    color: #fcfbfb;
+    color: #FAFAFA;
     text-decoration: none;
     padding: 35px;
 }
 body {
     background-color: #fcfbfb;
     font-size: 22px;
-    font-family: Raleway, Arial, sans-serif;
+    font-family: Agbalumo;
     margin: 0;
     padding: 0;
 }
@@ -38,7 +39,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: white;
+    color: #759C95;
 }
 .logo {
     width: 160px;
@@ -51,6 +52,7 @@ footer a {
 }
 footer p {
     font-size: 1em;
+    font-family: Agbalumo;
 }
 footer p a:hover {
     text-decoration: underline;
@@ -78,7 +80,7 @@ footer p a {
     clear: both;
   }
 .imagen{
-    background-color: white;
+    background-color: #686963;
     padding: 5px;
     flex: 25%;
 }
@@ -91,7 +93,7 @@ footer p a {
     cursor: pointer;
   }
 .btn:hover {
-    background-color: #ddd;
+    background-color: #686963;
 }
 
 .home-grid .imagen{
@@ -127,7 +129,16 @@ footer p a {
     height: 100%;
     cursor: pointer;
 }
-
+h3{
+    font-family: "Edu TAS Beginner";
+}
+h4{
+    font-family: Agbalumo;
+    color: #082058;   
+}
+.imagen p{
+    font-family: "Edu TAS Beginner";
+}
 @media screen and (max-width: 900px) {
     nav, footer {
         flex-direction: column;
@@ -145,4 +156,49 @@ footer p a {
     .home-grid{
         flex-wrap: wrap;
     }
+}
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: left;
+}
+.slider-frame{
+    width: 45%;
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.6);
+    margin: 30px;
+    overflow: hidden;
+    grid-column: 1/8;
+    grid-row: 1/1;
+}
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate linear;
+}
+.slider-frame li{
+    width: 100%;
+    list-style: none;
+}
+.about-me{
+    margin: 30px;
+    grid-column: 5/8;
+    grid-row: 1/1;
+}
+.slider-frame img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
 }
